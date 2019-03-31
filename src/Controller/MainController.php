@@ -16,4 +16,13 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
+
+    /**
+     * @Route("/test", name="test")
+     */
+    public function test()
+    {
+        phpinfo();
+        exit;
+    }
 }
